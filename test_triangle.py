@@ -15,8 +15,8 @@ def test_one_side_zero():
 def test_one_side_equals_sum_of_the_others():
     assert is_triangle(8, 8, 16) == False
 
-def test_one_side_equals_sum_of_the_others():
-    assert is_triangle(8, 8, 16) == False
-
 def test_side_shorter_sum__sides_divided_by2():
     assert is_triangle(5, 1, 2) == False
+
+def test_triangle_with_negative_side():
+    assert is_triangle(-8, 16, 22) == False
